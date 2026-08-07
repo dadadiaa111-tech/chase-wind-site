@@ -14,18 +14,13 @@ body {
   line-height: 1.7;
 }
 .site-header {
-  padding: 16px 24px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  padding: 18px 24px 14px;
   max-width: 720px;
   margin: 0 auto;
+  text-align: center;
 }
 .site-title {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--text);
@@ -33,20 +28,36 @@ body {
 }
 .site-nav {
   display: flex;
-  gap: 18px;
+  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
+  padding: 0 24px 18px;
+  max-width: 720px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
   color: var(--muted);
-  font-size: 0.95rem;
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.045);
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
-.site-nav a.active,
 .site-nav a:hover {
+  background: rgba(27,175,122,0.14);
   color: var(--text);
-  border-bottom-color: var(--accent);
+}
+.site-nav a.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 main {
   max-width: 720px;
