@@ -62,8 +62,8 @@ body {
   transition: background 0.15s ease, color 0.15s ease;
 }
 .nav-icon {
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   flex: none;
 }
 @media (max-width: 480px) {
