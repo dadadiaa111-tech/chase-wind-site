@@ -61,6 +61,11 @@ body {
   white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease;
 }
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
 @media (max-width: 480px) {
   .site-nav { gap: 4px; padding: 4px 12px 10px; }
   .site-nav a {
